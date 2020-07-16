@@ -18,6 +18,11 @@ ezpublish:
                         controller: "ngsite.controller.full_view:viewNgLandingPage"
                         match:
                             Identifier\ContentType: ng_landing_page
+#                    ng_recipe:
+#                        template: "@ezdesign/content/full/ng_recipe.html.twig"
+#                        controller: App\Controller\FullViewController::displayNgRecipe
+#                        match:
+#                            Identifier\ContentType: ng_recipe
                     common:
                         template: "@ezdesign/content/full/{content_type}.html.twig"
                         match:
