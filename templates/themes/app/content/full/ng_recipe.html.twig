@@ -88,6 +88,12 @@
                             <div class="recipe-calories">
                                 {{ ng_render_field(content.fields.serving_calories) }} {{ 'ngsite.layout.recipe.cal'|trans }}
                             </div>
+{#                            <div class="recipe-calories">#}
+{#                                {{ content.fields.serving_calories.value.value|base_convert_joules }} J#}
+{#                            </div>#}
+{#                            <div class="recipe-calories">#}
+{#                                {{ content.fields.serving_calories.value.value|base_convert_watts }} Wh#}
+{#                            </div>#}
                         {% endif %}
 
                         <ul class="recipe-serving-info">
