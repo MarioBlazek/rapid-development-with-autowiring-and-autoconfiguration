@@ -25,6 +25,7 @@ class FullViewController extends Controller
 
 //    public function displayNgRecipe(ContentView $view, CaloriesConverterInterface $baseCaloriesConverter)
 //    {
+//        dump(get_class($baseCaloriesConverter));
 //        return $view;
 //    }
 }

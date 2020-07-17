@@ -34,3 +34,5 @@ services:
 #        parent: netgen.ezplatform_site.controller.base
 
 #    eZ\Publish\Core\Helper\TranslationHelper: '@ezpublish.translation_helper'
+
+#    App\Converter\CaloriesConverterInterface: '@App\Converter\BaseUnitsConverter'
