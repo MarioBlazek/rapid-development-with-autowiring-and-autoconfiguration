@@ -2,7 +2,7 @@
 
 namespace App\Converter;
 
-class KiloUnitsConverter implements CaloriesConverterInterface
+class KiloUnitsConverter #implements CaloriesConverterInterface
 {
     protected const WATT_HOUR = '0.00000116222';
 
