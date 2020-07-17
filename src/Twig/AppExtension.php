@@ -6,7 +6,7 @@ use App\Converter\CaloriesConverterInterface;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;
 
-class AppExtension extends AbstractExtension
+class AppExtension #extends AbstractExtension
 {
     /**
      * @var \App\Converter\CaloriesConverterInterface
