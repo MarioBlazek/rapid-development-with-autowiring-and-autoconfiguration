@@ -14,17 +14,17 @@ class ExampleCommand extends Command
     /**
      * @var \App\Converter\CaloriesConverterInterface
      */
-    private $converter;
+    private $baseCaloriesConverter;
 
-    public function __construct(CaloriesConverterInterface $converter)
+    public function __construct(CaloriesConverterInterface $baseCaloriesConverter)
     {
-        $this->converter = $converter;
+        $this->baseCaloriesConverter = $baseCaloriesConverter;
         parent::__construct();
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        dump(get_class($this->converter));
+        dump(get_class($this->baseCaloriesConverter));
 
         return Command::SUCCESS;
     }

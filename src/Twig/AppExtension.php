@@ -11,11 +11,11 @@ class AppExtension extends AbstractExtension
     /**
      * @var \App\Converter\CaloriesConverterInterface
      */
-    private $caloriesConverter;
+    private $baseCaloriesConverter;
 
-    public function __construct(CaloriesConverterInterface $caloriesConverter)
+    public function __construct(CaloriesConverterInterface $baseCaloriesConverter)
     {
-        $this->caloriesConverter = $caloriesConverter;
+        $this->baseCaloriesConverter = $baseCaloriesConverter;
     }
 
     public function getFilters()
@@ -28,11 +28,11 @@ class AppExtension extends AbstractExtension
 
     public function convertToJoules(string $calories): float
     {
-        return $this->caloriesConverter->toJoules($calories);
+        return $this->baseCaloriesConverter->toJoules($calories);
     }
 
     public function convertToWatts(string $calories): float
     {
-        return $this->caloriesConverter->toWattHours($calories);
+        return $this->baseCaloriesConverter->toWattHours($calories);
     }
 }
